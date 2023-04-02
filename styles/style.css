@@ -1,0 +1,250 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+div{
+    margin: 0;
+}
+body{
+    background-color: #F5F5F5;;
+}
+
+.logo{
+    display: inline-block;
+}
+header{
+    margin-bottom: 1rem;
+}
+.container{
+    width: 72.5rem;
+    margin-left: 8.75rem;
+    margin-right: 8.75rem;
+}
+header ul{
+    list-style: none;
+}
+.active{
+    text-decoration: underline;
+}
+.header_nav{
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.header_nav_list{
+    font-family: inter;
+    font-weight: 400;
+    color: #454545;
+   
+    display: flex;
+    align-items: center;
+    column-gap: 9rem;
+    justify-content: space-between;
+    
+}
+.header_nav_list:first-child{
+    margin-left: 4.8125em;
+}
+.header_nav_list:last-child{
+    margin-right: 81px;
+}
+a{
+    text-decoration: none; 
+}
+
+.nav_button{
+    padding: 9px 24px 9px 24px;
+    color: #454545;
+    border: 1px solid;
+    border-color: #DE7439;
+    border-radius: 10px;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5ren;
+    
+}
+
+.line{
+    border: 1px solid #E0E0E0;
+    margin-bottom: 4.4375em;
+}
+
+.portfolio{
+    color: #454545;
+    font-family: Mulish;
+    font-size: 4.5em;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.catagory{
+    color: #454545;
+    font-family: Circular Std;
+    font-weight: 450;
+    font-size: 2.25em;
+    margin-bottom: 3.25rem;
+}
+.arrow_left{
+    display: inline-block;
+    position: absolute;
+    left: 5.6875rem;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #DE7439;
+}
+.kitchens_slider{
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.arrow_right{
+  display: inline-block;
+  position: absolute;
+  left: 83rem;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #DE7439;
+}
+
+.slider_group{
+  display: flex;
+  align-items: center;
+}
+
+.footer{
+  background-color: #5C5C5C;
+  padding-top: 3.125rem;
+}
+.footer_logo{
+  
+}
+
+.footer_main{
+  display: flex;
+  /* align-items: center; */
+  
+}
+
+.footer_right{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5.5625rem;
+  column-gap: 44px;
+}
+
+.title{
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+
+.menu{
+  color: #FFFFFF;
+  font-family: inter;
+  font-weight: 500;
+}
+
+.contacts{
+  color: #FFFFFF;
+  font-family: inter;
+  font-weight: 500;
+}
+.list{
+  font-size: 1rem;
+}
+
+.privacy_policy{
+  font-family: inter;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #FFFFFF;
+  margin-top: 3.2rem;
+  text-decoration: underline;
+}
+
+.social_media_links{
+  color:#DE7439;
+  margin-top: 2.8rem;
+  display: flex;
+  column-gap: 12.5px;
+}
+
